@@ -10,3 +10,5 @@ import android.view.ViewGroup
 class Equipos : Fragment(R.layout.fragment_equipos) {
 
 }
+
+data class VerEquipos(val nombreEquipo:String, val imagenEquipo:String)

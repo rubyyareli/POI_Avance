@@ -12,6 +12,13 @@ import kotlinx.android.synthetic.main.activity_main.*
 class MainActivity : AppCompatActivity()
 {
 
+    val equipos= listOf(
+        VerEquipos( "Programacion Orientada a la Internet", "imagen.com"),
+        VerEquipos( "Programacion Orientada a la Internet", "imagen.com"),
+        VerEquipos( "Programacion Orientada a la Internet", "imagen.com"),
+        VerEquipos( "Programacion Orientada a la Internet", "imagen.com"),
+    )
+
     private lateinit var toogle: ActionBarDrawerToggle
 
 

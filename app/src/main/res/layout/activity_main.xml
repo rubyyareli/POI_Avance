@@ -24,4 +24,9 @@
         app:headerLayout="@layout/nav_header"
         app:menu="@menu/nav_menu"/>
 
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvEquipo"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
 </androidx.drawerlayout.widget.DrawerLayout>
