@@ -5,14 +5,17 @@ import android.graphics.drawable.GradientDrawable
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.MenuItem
+import android.widget.LinearLayout
 import androidx.appcompat.app.ActionBarDrawerToggle
 import androidx.core.view.GravityCompat
+import androidx.recyclerview.widget.LinearLayoutManager
 import kotlinx.android.synthetic.main.activity_main.*
+import kotlinx.android.synthetic.main.recycleview_equipos.*
 
 class MainActivity : AppCompatActivity()
 {
 
-    val equipos= listOf(
+    var equipos= listOf(
         VerEquipos( "Programacion Orientada a la Internet", "imagen.com"),
         VerEquipos( "Programacion Orientada a la Internet", "imagen.com"),
         VerEquipos( "Programacion Orientada a la Internet", "imagen.com"),
@@ -24,7 +27,8 @@ class MainActivity : AppCompatActivity()
 
 
     override fun onCreate(savedInstanceState: Bundle?)
-    {
+    {        //initRecycler()
+
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
@@ -91,4 +95,12 @@ class MainActivity : AppCompatActivity()
         }
         return super.onOptionsItemSelected(item)
     }
+
+    /*fun initRecycler()
+    {
+        rvEquipo.layoutManager=LinearLayoutManager(this)
+        val adapter=VerEquiposAdapter(equipos)
+        rvEquipo.adapter=adapter
+    }*/
+
 }

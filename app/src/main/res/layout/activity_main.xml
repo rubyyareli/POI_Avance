@@ -6,14 +6,16 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"
-  >
+    tools:context=".MainActivity">
+
+
 
 
     <androidx.fragment.app.FragmentContainerView
         android:id="@+id/fragmentContainerView"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"/>
+        android:layout_height="match_parent"
+        android:name="com.poi.poi_avance_1.Notificaciones"/>
 
     <com.google.android.material.navigation.NavigationView
         android:id="@+id/nav_view"
@@ -24,9 +26,6 @@
         app:headerLayout="@layout/nav_header"
         app:menu="@menu/nav_menu"/>
 
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/rvEquipo"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"/>
+
 
 </androidx.drawerlayout.widget.DrawerLayout>
